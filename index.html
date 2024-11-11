@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Workshop</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Optional: Add your own custom styles here */
+      .card {
+        margin-bottom: 20px; /* Adjust the value to set the desired padding between ads */
+        border: none; /* Remove border for the cards */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a lifted effect */
+      }
+
+      .card-footer {
+        background-color: #f8f9fa; /* Background color for the card footer */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="mb-4">Advertisement List</h2>
+
+      <!-- Filter component -->
+      <div class="mb-3">
+        <label for="filterTitle">Filter by Title:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="filterTitle"
+          placeholder="Enter title"
+        />
+      </div>
+
+      <div id="advertisements" class="row"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
